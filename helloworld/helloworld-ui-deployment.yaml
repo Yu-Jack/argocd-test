@@ -14,7 +14,7 @@ spec:
         app: helloworld
     spec:
       containers:
-      - image: jocatalin/kubernetes-bootcamp:v2
+      - image: gcr.io/google-samples/kubernetes-bootcamp:v1
         name: helloworld
         ports:
         - containerPort: 8080
