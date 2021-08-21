@@ -12,6 +12,6 @@ spec:
       - name: slack-notification
         image: curlimages/curl
         command:
-          - "ls"
+          - "hostname"
       restartPolicy: Never
-  backoffLimit: 2
+  backoffLimit: 0
