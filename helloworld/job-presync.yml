@@ -12,7 +12,6 @@ spec:
       - name: slack-notification
         image: curlimages/curl
         command:
-          - "ls"
-          - "-al"
+          - "exit 1"
       restartPolicy: Never
   backoffLimit: 2
