@@ -10,7 +10,7 @@ spec:
     spec:
       containers:
       - name: presync
-        image: docker://b452e0dcb9e3eedba20e1c5096428b0cf920776830017930a6033cc299029394
+        image: jocatalin/kubernetes-bootcamp:v2
         command:
           - "ls"
           - "-al"
