@@ -1,0 +1,2 @@
+image: gcr.io/google-samples/kubernetes-bootcamp:v1
+image: jocatalin/kubernetes-bootcamp:v2
