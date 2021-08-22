@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: railstest
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: railstest
+  template:
+    metadata:
+      labels:
+        app: railstest
+    spec:
+      containers:
+      - image: jk82421/rails-migration-failed:v1
+        name: railstest
+        ports:
+        - containerPort: 3000
