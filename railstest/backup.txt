@@ -1,0 +1,7 @@
+jk82421/rails-migration-failed:v1 migration failed, but shell don't have set -e
+jk82421/rails-migration-failed:v2 migration failed, but shell have set -e
+jk82421/rails-migration-failed:v3 migration failed, but shell don't have set -e
+
+v1 -> v3 will be successful
+v3 -> v1 will be successful
+v2 -> v1 / v3 will be failed, cause of "set -e" in shell
