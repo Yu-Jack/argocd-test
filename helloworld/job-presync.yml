@@ -9,9 +9,10 @@ spec:
   template:
     spec:
       containers:
-      - name: slack-notification
-        image: curlimages/curl
+      - name: presync
+        image: docker-pullable://jocatalin/kubernetes-bootcamp@sha256:fb1a3ced00cecfc1f83f18ab5cd14199e30adc1b49aa4244f5d65ad3f5feb2a5
         command:
-          - "hostname"
+          - "ls"
+          - "-al"
       restartPolicy: Never
   backoffLimit: 0
