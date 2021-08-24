@@ -1,0 +1,20 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-api-doc:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: list
+        run:  ls -al
+      - name: echo variable
+        run: |
+          echo "$GITHUB_REF"
+          echo "${GITHUB_REF#refs/heads/}"
