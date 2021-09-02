@@ -10,7 +10,7 @@ spec:
     spec:
       containers:
       - name: presync
-        image: jk82421/rails-migration-failed:v2
+        image: jk82421/rails-migration-failed:v1
         command:
           - "sh"
           - "./bin/presync.sh"
