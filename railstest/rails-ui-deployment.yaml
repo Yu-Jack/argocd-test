@@ -14,7 +14,7 @@ spec:
         app: railstest
     spec:
       containers:
-      - image: jk82421/rails-migration-failed:v4
+      - image: jk82421/rails-migration-failed:v5
         name: railstest
         ports:
         - containerPort: 3000
